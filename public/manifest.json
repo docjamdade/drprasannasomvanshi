@@ -1,0 +1,13 @@
+{
+  "name": "Dr. Prasanna Somvanshi — Plastic & Reconstructive Surgeon",
+  "short_name": "Dr. Somvanshi",
+  "description": "Plastic & Reconstructive Surgeon in Mumbai. Cosmetic and reconstructive surgery with compassionate care.",
+  "start_url": "/",
+  "display": "standalone",
+  "background_color": "#FAF7F2",
+  "theme_color": "#4A9E9E",
+  "icons": [
+    { "src": "/icon-192.png", "sizes": "192x192", "type": "image/png" },
+    { "src": "/icon-512.png", "sizes": "512x512", "type": "image/png" }
+  ]
+}
