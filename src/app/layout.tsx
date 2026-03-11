@@ -144,6 +144,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
   return (
     <html lang="en" className={`${inter.variable} ${nunito.variable}`}>
       <head>
+        <meta name="google-site-verification" content="m_rBNPsRc68De6LknsZ_qFJCSBHcVV_U2stg287PYQg" />
         <script
           type="application/ld+json"
           dangerouslySetInnerHTML={{ __html: JSON.stringify(jsonLd) }}
