@@ -4,7 +4,7 @@ import { useState, useCallback, ReactNode } from "react";
 import { buildWhatsAppUrl, messages } from "@/lib/whatsapp";
 
 // Date-gated: auto-disables after September 2026
-const UNAVAILABLE_FROM = new Date("2026-07-01T00:00:00+05:30");
+const UNAVAILABLE_FROM = new Date("2026-06-27T00:00:00+05:30");
 const UNAVAILABLE_UNTIL = new Date("2026-10-01T00:00:00+05:30");
 
 function isUnavailable() {
