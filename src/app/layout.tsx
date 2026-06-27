@@ -3,6 +3,7 @@ import { Inter, Nunito } from "next/font/google";
 import Navbar from "@/components/Navbar";
 import Footer from "@/components/Footer";
 import WhatsAppFloat from "@/components/WhatsAppFloat";
+import { UnavailabilityBanner } from "@/components/UnavailabilityModal";
 import "./globals.css";
 
 const inter = Inter({ subsets: ["latin"], variable: "--font-inter" });
@@ -153,6 +154,7 @@ export default function RootLayout({ children }: { children: React.ReactNode }) 
         />
       </head>
       <body className="min-h-screen flex flex-col bg-background text-text antialiased">
+        <UnavailabilityBanner />
         <Navbar />
         <main className="flex-1">{children}</main>
         <Footer />

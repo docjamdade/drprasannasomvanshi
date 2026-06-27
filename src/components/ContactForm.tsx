@@ -1,8 +1,9 @@
 "use client";
 
-import { useState } from "react";
+import { useState, useRef } from "react";
 import { buildWhatsAppUrl, messages } from "@/lib/whatsapp";
 import { services } from "@/lib/services";
+import UnavailabilityGate from "./UnavailabilityModal";
 
 export default function ContactForm() {
   const [name, setName] = useState("");
@@ -61,10 +62,12 @@ export default function ContactForm() {
             className="mt-1 block w-full rounded-xl border border-cream-dark bg-white px-4 py-3 text-sm text-text shadow-sm focus:border-primary focus:ring-1 focus:ring-primary outline-none transition resize-none"
             placeholder="Tell us about your query..." />
         </div>
-        <button type="submit"
-          className="w-full rounded-xl bg-primary px-6 py-3.5 text-sm font-semibold text-white shadow-md hover:bg-primary-dark transition-colors">
-          Send via WhatsApp
-        </button>
+        <UnavailabilityGate>
+          <button type="submit"
+            className="w-full rounded-xl bg-primary px-6 py-3.5 text-sm font-semibold text-white shadow-md hover:bg-primary-dark transition-colors">
+            Send via WhatsApp
+          </button>
+        </UnavailabilityGate>
       </form>
     </div>
   );
